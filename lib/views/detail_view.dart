@@ -33,7 +33,8 @@ class _DetailViewState extends State<DetailView> {
                 children: [
                   Text('Resumen: ${widget.service.name}', style: const TextStyle(color: AppColors.white, fontSize: 18, fontWeight: FontWeight.bold)),
                   const SizedBox(height: 4),
-                  Text('${widget.service.duration} | ${widget.service.price}', style: const TextStyle(color: AppColors.goldenPalm, fontSize: 16)),
+                 Text('${widget.service.durationMinutes} min | \$${widget.service.price.toStringAsFixed(0)}', 
+                  style: const TextStyle(color: AppColors.goldenPalm, fontSize: 16)),
                 ],
               ),
             ),

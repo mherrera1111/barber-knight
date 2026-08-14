@@ -2,10 +2,32 @@ import 'package:flutter/material.dart';
 import '../models/service_model.dart';
 
 class BarberViewModel extends ChangeNotifier {
+  // Si deseas mantener datos de prueba estáticos temporalmente adaptados al nuevo modelo:
   final List<ServiceModel> services = [
-    ServiceModel(name: 'Corte Tradicional', description: 'Corte con tijera y máquina.', duration: '30 minutos', price: '\$ 25.000'),
-    ServiceModel(name: 'Barba Premium', description: 'Perfilado con toalla caliente.', duration: '30 minutos', price: '\$ 18.000'),
-    ServiceModel(name: 'Cuidado Facial', description: 'Limpieza facial profunda.', duration: '90 minutos', price: '\$ 130.000'),
+    ServiceModel(
+      id: '1',
+      category: 'cabello',
+      name: 'Corte Tradicional',
+      description: 'Corte con tijera y máquina.',
+      durationMinutes: 30,
+      price: 25000.0,
+    ),
+    ServiceModel(
+      id: '2',
+      category: 'barba',
+      name: 'Barba Premium',
+      description: 'Perfilado con toalla caliente.',
+      durationMinutes: 30,
+      price: 18000.0,
+    ),
+    ServiceModel(
+      id: '3',
+      category: 'facial',
+      name: 'Cuidado Facial',
+      description: 'Limpieza facial profunda.',
+      durationMinutes: 90,
+      price: 130000.0,
+    ),
   ];
 
   String? selectedDate;

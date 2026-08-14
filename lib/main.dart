@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'core/app_colors.dart';
-import 'views/home_view.dart';
+import 'views/login_view.dart';
+
 
 void main() {
   runApp(const BarberKnightApp());
@@ -18,7 +19,7 @@ class BarberKnightApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.midnightBlue,
         primaryColor: AppColors.goldenPalm,
       ),
-      home: const HomeView(),
+      home: const LoginView(),
     );
   }
 }
